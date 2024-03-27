@@ -1,0 +1,148 @@
+192.168.213.144
+Host is up (0.27s latency).
+Not shown: 65493 closed tcp ports (reset), 39 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 fb:ea:e1:18:2f:1d:7b:5e:75:96:5a:98:df:3d:17:e4 (ECDSA)
+|_  256 66:f4:54:42:1f:25:16:d7:f3:eb:f7:44:9f:5a:1a:0b (ED25519)
+80/tcp open  http    Apache httpd 2.4.52 ((Ubuntu))
+|_http-generator: Nicepage 4.21.12, nicepage.com
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Home
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 36.92 seconds
+
+
+192.168.213.143
+Host is up (0.31s latency).
+Not shown: 65525 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        vsftpd 3.0.3
+22/tcp   open  ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 23:4c:6f:ff:b8:52:29:65:3d:d1:4e:38:eb:fe:01:c1 (RSA)
+|   256 0d:fd:36:d8:05:69:83:ef:ae:a0:fe:4b:82:03:32:ed (ECDSA)
+|_  256 cc:76:17:1e:8e:c5:57:b2:1f:45:28:09:05:5a:eb:39 (ED25519)
+80/tcp   open  http       Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+81/tcp   open  http       Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Test Page for the Nginx HTTP Server on Fedora
+443/tcp  open  http       Apache httpd 2.4.41
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+3000/tcp open  ppp?
+3001/tcp open  nessus?
+3003/tcp open  cgms?
+3306/tcp open  mysql      MySQL (unauthorized)
+5432/tcp open  postgresql PostgreSQL DB 9.6.0 or later
+| ssl-cert: Subject: commonName=aero
+| Subject Alternative Name: DNS:aero
+| Not valid before: 2021-05-10T22:20:48
+|_Not valid after:  2031-05-08T22:20:48
+| fingerprint-strings: 
+|   SMBProgNeg: 
+|     SFATAL
+|     VFATAL
+|     C0A000
+|     Munsupported frontend protocol 65363.19778: server supports 2.0 to 3.0
+|     Fpostmaster.c
+|     L2113
+|_    RProcessStartupPacket
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3003-TCP:V=7.94SVN%I=7%D=3/25%Time=66012290%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,1,"\n")%r(GetRequest,1,"\n")%r(HTTPOptions,1,"\n")%r(RTSP
+SF:Request,1,"\n")%r(Help,1,"\n")%r(SSLSessionReq,1,"\n")%r(TerminalServer
+SF:Cookie,1,"\n")%r(Kerberos,1,"\n")%r(FourOhFourRequest,1,"\n")%r(LPDStri
+SF:ng,1,"\n")%r(LDAPSearchReq,1,"\n")%r(SIPOptions,1,"\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5432-TCP:V=7.94SVN%I=7%D=3/25%Time=6601228C%P=x86_64-pc-linux-gnu%r
+SF:(SMBProgNeg,8C,"E\0\0\0\x8bSFATAL\0VFATAL\0C0A000\0Munsupported\x20fron
+SF:tend\x20protocol\x2065363\.19778:\x20server\x20supports\x202\.0\x20to\x
+SF:203\.0\0Fpostmaster\.c\0L2113\0RProcessStartupPacket\0\0");
+Service Info: Host: 127.0.0.2; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 168.77 seconds
+
+
+192.168.213.141 
+Nmap scan report for 192.168.213.141
+Host is up (0.27s latency).
+Not shown: 65510 closed tcp ports (reset)
+PORT      STATE    SERVICE         VERSION
+22/tcp    open     ssh             OpenSSH for_Windows_8.1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 e0:3a:63:4a:07:83:4d:0b:6f:4e:8a:4d:79:3d:6e:4c (RSA)
+|   256 3f:16:ca:33:25:fd:a2:e6:bb:f6:b0:04:32:21:21:0b (ECDSA)
+|_  256 fe:b0:7a:14:bf:77:84:9a:b3:26:59:8d:ff:7e:92:84 (ED25519)
+80/tcp    open     http            Apache httpd 2.4.51 ((Win64) PHP/7.4.26)
+|_http-title: Home
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-generator: Nicepage 4.8.2, nicepage.com
+|_http-server-header: Apache/2.4.51 (Win64) PHP/7.4.26
+81/tcp    open     http            Apache httpd 2.4.51 ((Win64) PHP/7.4.26)
+|_http-title: Attendance and Payroll System
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.51 (Win64) PHP/7.4.26
+135/tcp   open     msrpc           Microsoft Windows RPC
+139/tcp   open     netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+3306/tcp  open     mysql           MySQL (unauthorized)
+3307/tcp  open     opsession-prxy?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, JavaRMI, LANDesk-RC: 
+|_    Host '192.168.45.217' is not allowed to connect to this MariaDB server
+5040/tcp  open     unknown
+5985/tcp  open     http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8467/tcp  filtered unknown
+10862/tcp filtered unknown
+36798/tcp filtered unknown
+38981/tcp filtered unknown
+47001/tcp open     http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+48967/tcp filtered unknown
+49664/tcp open     msrpc           Microsoft Windows RPC
+49665/tcp open     msrpc           Microsoft Windows RPC
+49666/tcp open     msrpc           Microsoft Windows RPC
+49667/tcp open     msrpc           Microsoft Windows RPC
+49668/tcp open     msrpc           Microsoft Windows RPC
+49669/tcp open     msrpc           Microsoft Windows RPC
+49670/tcp open     msrpc           Microsoft Windows RPC
+53570/tcp open     msrpc           Microsoft Windows RPC
+56852/tcp filtered unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3307-TCP:V=7.94SVN%I=7%D=3/25%Time=66016384%P=x86_64-pc-linux-gnu%r
+SF:(DNSStatusRequestTCP,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.217'\
+SF:x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20se
+SF:rver")%r(LANDesk-RC,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.217'\x
+SF:20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20ser
+SF:ver")%r(JavaRMI,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.217'\x20is
+SF:\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server"
+SF:);
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+mary.williams
+
+Host script results:
+| smb2-time: 
+|   date: 2024-03-25T11:46:41
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 210.86 seconds
